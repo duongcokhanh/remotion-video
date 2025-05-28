@@ -89,8 +89,8 @@ export const Phone: React.FC<{
   return (
     <group
       scale={entranceAnimation}
-      rotation={[0, rotateY, 0]}
-      position={[0, translateY, 0]}
+      rotation={[0, 0, 0]}
+      position={[0, 0, 0]}
     >
       <RoundedBox
         radius={layout.phone.radius}

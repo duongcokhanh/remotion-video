@@ -33,8 +33,9 @@ export const Scene: React.FC<
   const { width, height } = useVideoConfig();
   const [videoData, setVideoData] = useState<VideoMetadata | null>(null);
 
-  const videoSrc =
-    deviceType === "phone" ? staticFile("phone.mp4") : staticFile("tablet.mp4");
+  // const videoSrc =
+  //   deviceType === "phone" ? staticFile("phone.mp4") : staticFile("tablet.mp4");
+  const videoSrc = staticFile("test-video.mp4")
 
   useEffect(() => {
     getVideoMetadata(videoSrc)
